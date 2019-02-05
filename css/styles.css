@@ -1,0 +1,943 @@
+  /*=================
+===== STYLING =====
+=================*/
+{
+ border-style:   dashed;
+ border-color:   blue;
+}
+
+*,
+*:before,
+*:after {
+	padding: 0px;
+	margin: 0px;
+	transition: 0.3s;
+}
+
+
+html {
+	font-size: 14px;
+}
+
+body {
+	text-align: center;
+	overflow-x: hidden;
+}
+
+/*===============
+===== MEDIA =====
+===============*/
+
+/*==== iPAD =====*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+}
+
+/*==============================
+===== ANCHOR AND BOLD TEXT =====
+==============================*/
+
+a {
+  color: #505050;
+	text-decoration: none;
+	display: inline-block;
+}
+
+/*=======================
+===== BROWSER FIXES =====
+=======================*/
+
+@-webkit-viewport {
+	width: device-width;
+}
+
+@-moz-viewport {
+	width: device-width;
+}
+
+@-ms-viewport {
+	width: device-width;
+}
+
+@-o-viewport {
+	width: device-width;
+}
+
+@viewport {
+	width: device-width;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+ul,
+ol {
+	list-style-type: none;
+}
+
+/*================
+====== FONTS =====
+================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: "raleway", sans-serif;
+}
+
+
+p{
+  font-family: 'PT Serif', serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #2d2d2d;
+}
+
+h1 {
+	font-size: 2rem;
+  letter-spacing: .5rem;
+  padding-top: 300px;
+  padding-left: 5%;
+	text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+  color: white;
+}
+
+h2 {
+	font-size: 2rem;
+  font-weight: 600;
+	margin-bottom: 10px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.75rem;
+	font-weight: 600;
+  letter-spacing: 1rem;
+}
+
+h4 {
+	font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: .75rem;
+  padding-bottom: 3%;
+}
+
+h5 {
+   display: inline-block;
+   font-size: 1rem;
+   font-weight: 400;
+   color: white;
+   letter-spacing: 7px;
+}
+h6 {
+	font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: .5rem;
+  padding-bottom: 2%;
+}
+p {
+  font-size: .9rem;
+	line-height: 1.5;
+	text-align: center;
+  letter-spacing: 1px;
+  color: #2d2d2d;
+  max-width: 700px;
+  margin: auto;
+  padding-bottom: 5%;
+}
+
+::-moz-selection {
+	color: #fff;
+}
+
+::selection {
+	color: #fff;
+}
+
+/*===============
+===== LISTS =====
+===============*/
+
+.list,
+.icon-list,
+.styled-icon-list {
+	padding-left: 40px;
+	margin-bottom: 20px;
+	font-size: 1rem;
+}
+
+.styled-icon-list {
+	padding-left: 0px;
+}
+
+ol.list {
+	list-style: decimal;
+}
+
+ol.list ol.list {
+	margin-bottom: 0px;
+}
+
+ul.list li:before {
+	content: "";
+	display: inline-block;
+	position: relative;
+	left:-15px;
+	top:-3px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+}
+
+.icon-list i {
+	margin-right: 10px;
+}
+
+.styled-icon-list li {
+	margin-bottom: 10px;
+}
+
+.styled-icon-list .icon {
+	float: left;
+	margin-right: 10px;
+}
+
+.list-content {
+	display: table-cell;
+	height: 40px;
+	vertical-align: middle;
+}
+
+/*=================
+===== COLUMNS =====
+=================*/
+
+.col-3,
+.col-4,
+.col-6,
+.col-8,
+.col-12,
+.col-9 + .col-3 {
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 1rem;
+	vertical-align: top;
+	width: 100%;
+}
+
+.col-9 {
+  display: inline-block;
+  margin-top: 30px;
+	margin-left: 20px;
+	font-size: 1rem;
+	vertical-align: top;
+	width: 30%;
+}
+
+.col-3 img,
+.col-4 img,
+.col-6 img,
+.col-8 img,
+.col-9 img,
+.col-12 img {
+	max-width: 100%;
+}
+
+.col-3 p,
+.col-4 p,
+.col-6 p,
+.col-8 p,
+.col-9 p,
+.col-12 p {
+	margin-bottom: 20px;
+}
+
+.text-center,
+.text-right,
+.text-left  {
+	text-align: center;
+}
+
+/* ===== ICONS ===== */
+
+
+.icon {
+	display: inline-block;
+	border-radius: 50%;
+	font-size: 1rem;
+}
+
+.icon i {
+	display: table-cell;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.dark-bg .icon i {
+	color: #fff;
+	border: solid 1px #fff;
+}
+
+a.icon:hover i {
+	background: #fff;
+}
+
+/*=================
+===== BUTTONS =====
+=================*/
+
+.btn {
+ margin-top: 150px;
+ text-align: center;
+ position: relative;
+ padding: 2%;
+ cursor: pointer;
+ font-size: .75rem;
+ color: white;
+ text-transform: uppercase;
+ width: 300px;
+}
+.hero-btn {
+text-align: center;
+ position: relative;
+ margin-left: 5%;
+ padding: 1%;
+ cursor: pointer;
+ font-size: .75rem;
+ color: white;
+ text-transform: uppercase;
+ width: 225px;
+}
+.social{
+ position: absolute;
+ display: inline;
+ bottom: 0;
+ right: 0;
+ width: 205px;
+ height: 75px;
+ padding-top: 25px;
+ background: #cdb98e
+}
+.social1{
+position: absolute;
+display: inline;
+bottom: 0;
+right: 0;
+width: 205px;
+height: 75px;
+padding-top: 25px;
+background: #cdb98e;
+margin-right: 206px;
+cursor: pointer;
+}
+.social-btn {
+position: relative;
+cursor: pointer;
+font-size: 1rem;
+color: white;
+font-style: italic;
+text-align: center;
+}
+.hero-standard-btn {
+  border: solid 2px white;
+  display: block;
+  background: transparent;
+}
+.standard-btn {
+  border: solid 2px white;
+  background: transparent;
+}
+.btn-2 {
+	position: relative;
+	z-index: 100;
+	padding: 2% 4%;
+	cursor: pointer;
+	font-size: 1.2rem;
+  color: white;
+	text-transform: uppercase;
+	background: transparent;
+	margin-top: 25px;
+}
+.secondary-btn {
+  display: inline-block;
+  background: transparent;
+	border-style: solid;
+  border-color: #cdb98e;
+	border-width: thin;
+}
+/* ===== ICON BOXES ===== */
+
+
+.icon-boxes {
+	position: relative;
+	margin: auto;
+	max-width: 785px;
+}
+
+.icon-boxes:after {
+	display: none;
+	content: "";
+	position: absolute;
+	top: 100px;
+	left: calc(50% - 460px);
+	width: 920px;
+	margin: auto;
+	z-index:-1;
+}
+
+.icon-box {
+	display: inline-block;
+	vertical-align: middle;
+  height: 400px;
+  width: 400px;
+  position: relative;
+}
+
+.icon-box:last-child {
+	margin-bottom: 0px;
+}
+
+.icon-box i {
+	display: table-cell;
+	width: 200px;
+	height: 200px;
+	font-size: 100px;
+	color: #fff;
+	vertical-align: middle;
+}
+
+.icon-box:hover i {
+	font-size: 120px;
+}
+
+.icon-box h3 {
+	margin-top: 20px;
+}
+
+/* ===== STYLING, WRAPPER, COLOR OVERLAY AND LINE =====*/
+
+
+section,
+header {
+	background-size: cover;
+}
+
+.wrapper {
+	position: relative;
+	max-width: 1200px;
+	margin: auto;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 0px;
+}
+
+hr {
+  z-index: 1000;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: .5px;
+  border-color: #cdb98e;
+}
+
+/*====================
+===== NAVIGATION =====
+====================*/
+.nav {
+  display: flex;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  background-color: transparent;
+}
+.nav img{
+  width: 125px;
+	padding: 30% 15% 20% 15%;
+	background-color: #cdb98e;
+}
+.nav-item a:hover{
+	background: #cdb98e;
+}
+.nav-mobile{
+  z-index: 1000;
+	/* Hide from browsers that don't support media queries */
+	cursor:pointer;
+	position:absolute;
+		display:block;
+	top: 30px;
+	right: 30px;
+	background:url(../images/nav.svg) no-repeat center center;
+	height:50px;
+	width:50px;
+}
+.nav-list{
+	text-align: left;
+	display: none;
+	flex:auto;
+  position: absolute;
+	right: 0;
+	width: 250px;
+	padding-top: 200px;
+	padding-left: 10px;
+	padding-bottom: 100px;
+  background-color: rgba(50, 50, 50, 0.95);
+  box-shadow: 0px 2px 4px 0px rgba(50, 50, 50, 0.5);
+}
+.nav-list a{
+	padding:10px;
+}
+.nav-active{
+	display:block;
+}
+/*==============
+===== HERO =====
+==============*/
+
+.home-hero {
+	background-image: url(../images/loraandted-hero.jpg);
+  position: relative;
+  height: 700px;
+  background-position: center;
+}
+
+.mountain-hero {
+	background-image: url(../images/colorado-family-photographer001.jpg);
+  position: relative;
+  height: 750px;
+  background-position: center;
+}
+
+.family-hero {
+	background-image: url(../images/denver-family-photography001.jpg);
+  position: relative;
+  height: 750px;
+  background-position: center;
+}
+
+.newborn-hero {
+	background-image: url(../images/denver-newborn-photography001.jpg);
+  position: relative;
+  height: 750px;
+  background-position: center;
+}
+
+.about-hero {
+	background-image: url(../images/loraandted.jpg);
+  position: relative;
+  height: 750px;
+  background-position: center;
+}
+
+.contact-hero {
+	background-image: url(../images/loraandted-hero.jpg);
+  position: relative;
+  height: 750px;
+  background-position: center;
+}
+
+.home-hero p, .about-hero p, .newborn-hero p, .family-hero p, .mountain-hero p, .contact-hero p {
+  padding-left: 5%;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-align: left;
+  margin: 0;
+  color: white;
+}
+
+.social-btn p{
+  font-size: 1rem;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+
+#mc-embedded-subscribe-form{
+  background: none;
+}
+
+/* =================
+===== SERVICES =====
+================= */
+.services{
+  padding: 5%;
+}
+.containerBox {
+    position: relative;
+    display: inline-block;
+}
+.text-box {
+    position: absolute;
+    height: 20%;
+    text-align: center;
+    width: 100%;
+}
+.text-box:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+
+.containerBox img {
+  display: block;
+  width: 350px;
+  height: auto;
+}
+.containerBox img:hover {
+  outline: 3px solid #cdb98e;
+  outline-offset: -20px;
+  transition: 1s;
+}
+
+.containerBox h5 {
+  color: white;
+  font-weight: 600;
+}
+
+/*==============
+==== ABOUT =====
+==============*/
+.about{
+  padding: 3%;
+}
+
+.about img{
+  width: 50%;
+  min-width: 400px;
+  margin: 1%;
+  vertical-align: middle;
+}
+ .about-box {
+ 	display: inline-block;
+ 	width: 400px;
+ 	padding: 4%;
+  margin: 1%;
+  vertical-align: middle;
+	background-color: white;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.05);
+ }
+ /*=================
+ ===== OPTIONS =====
+ =================*/
+.options{
+ padding: 5%;
+}
+.options .icon-box{
+ width: 350px;
+ margin: 1%;
+}
+
+/*===================
+===== HOME-HERO3 ====
+===================*/
+
+.home-hero3{
+   background-image: url(../images/loraandted-baby.jpg);
+   height: 800px;
+   background-position: bottom;
+ }
+
+.home-hero3-box{
+  display: inline-block;
+  width: 400px;
+  height: 450px;
+  margin-left: -60%;
+  padding: 40px;
+  font-size: 1rem;
+  background-color: white;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+ }
+
+ .home-hero3 h3 {
+   text-align: center;
+   width: 90%;
+   margin-bottom: 25px;
+   margin: 0 auto;
+  }
+
+/*==============
+===== HOME-HERO4 ====
+==============*/
+
+  .home-hero4{
+     background-image: url(../images/loraandted-family.jpg);
+     height: 800px;
+     background-position: center;
+   }
+
+  .home-hero4-box{
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+    margin-left: 50%;
+    padding: 50px;
+    font-size: 1rem;
+    background-color: white;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+   }
+
+   .home-hero4 h3 {
+     text-align: center;
+     width: 90%;
+     margin-bottom: 25px;
+     margin: 0 auto;
+    }
+
+    /*========================
+    ===== MOUNTAIN-HERO =====
+    ========================*/
+
+    .mountain-hero2{
+       background-image: url(../images/colorado-family-photographer002.jpg);
+       height: 800px;
+     }
+
+     .mountain-hero3{
+        background-image: url(../images/colorado-family-photographer002.jpg);
+        height: 800px;
+    }
+    /*========================
+    ===== FAMILY-HERO =====
+    ========================*/
+    .family-hero2{
+       background-image: url(../images/denver-family-photography002.jpg);
+       height: 800px;
+     }
+
+     /*========================
+     ===== NEWBORN-HERO =====
+     ========================*/
+     .newborn-hero2{
+        background-image: url(../images/denver-newborn-photography002.jpg);
+        height: 800px;
+      }
+
+      /*========================
+      ===== ABOUT-HERO =====
+      ========================*/
+      .about-hero2{
+         background-image: url(../images/loraandted-about002.jpg);
+         height: 800px;
+       }
+       /* CONTACT */
+
+       .contact {
+         max-width: 700px;
+         width: 100%;
+         margin: 0 auto;
+         position: relative;
+       }
+
+       #contact {
+         background: white;
+         padding: 80px;
+         margin: -75px 0 100px 0;
+         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+       }
+
+       #contact h3 {
+         display: block;
+         font-size: 30px;
+         margin-bottom: 10px;
+         text-align: center;
+       }
+
+       fieldset {
+         border: medium none !important;
+         margin: 0 0 10px;
+         min-width: 100%;
+         padding: 0;
+         width: 100%;
+       }
+
+       #contact input[type="text"],
+       #contact textarea {
+         width: 100%;
+         border: 1px solid #ccc;
+         background: #FFF;
+         margin: 0 0 10px;
+         padding: 5%;
+       }
+
+       #contact input[type="text"]:hover,
+       #contact textarea:hover {
+         -webkit-transition: border-color 0.3s ease-in-out;
+         -moz-transition: border-color 0.3s ease-in-out;
+         transition: border-color 0.3s ease-in-out;
+         border: 1px solid #aaa;
+       }
+
+       #contact textarea {
+         height: 100px;
+         max-width: 100%;
+         resize: none;
+       }
+
+       .robotest {
+       	display: none;
+       }
+
+       input[type=submit] {
+           background: #cdb98e;
+           color: white;
+           padding: 15px 20px;
+           border: none;
+           cursor: pointer;
+           display: flex;
+           font-size: 1em;
+           letter-spacing: .25em;
+       }
+
+       /* When moving the mouse over the submit button, add a darker green color */
+       input[type=submit]:hover {
+         background: #7F7F7F;
+         -webkit-transition: background 0.3s ease-in-out;
+         -moz-transition: background 0.3s ease-in-out;
+         transition: background-color 0.3s ease-in-out;
+       }
+
+
+       .copyright {
+         text-align: center;
+       }
+
+
+       #contact input:focus,
+       #contact textarea:focus {
+         outline: 0;
+         border: 1px solid #aaa;
+       }
+
+       ::-webkit-input-placeholder {
+         color: #888;
+       }
+
+       :-moz-placeholder {
+         color: #888;
+       }
+
+       ::-moz-placeholder {
+         color: #888;
+       }
+
+       :-ms-input-placeholder {
+         color: #888;
+       }
+/*==============
+===== BLOG =====
+==============*/
+
+.blog {
+  background-image: url(../images/loraandted-blog.jpg);
+  height: 400px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+}
+/*========================
+===== CALL TO ACTION =====
+========================*/
+.call-to-action {
+   display: inline-block;
+   width: 100%;
+}
+.call-to-action .wrapper {
+	position: relative;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 25px 40px 25px;
+	font-size: 0px;
+}
+.call-to-action h5{
+	color: #cdb98e;
+}
+/*================
+===== FOOTER =====
+================*/
+footer {
+	position: relative;
+	padding: 60px;
+	padding-top: 75px;
+}
+footer img{
+	margin: 25px 15px 0 15px ;
+}
+.footer h3 {
+  font-size: 1rem;
+	font-weight: 600;
+	margin-top: 5%;
+  letter-spacing: .5rem;
+	color: #7f7f7f;
+}
+.footer p {
+  font-size: .75rem;
+	font-weight: 300;
+  letter-spacing: .25rem;
+	font-family: "PT Serif",Georgia,serif;
+	color: #252626;
+}
+.footer-box {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 5% 0 5%;
+}
+footer li {
+	list-style-type: none;
+	padding-bottom: 5px;
+	color: gray;
+}
+footer li a {
+	display: inline-block;
+	color: gray;
+}
+.back-to-top {
+	position: absolute;
+	top:-40px;
+	left: 50%;
+	margin-left:-50px;
+	background: #2c3e50;
+	border: solid #2c3e50 10px;
+}
+footer .back-to-top i {
+  width: 80px;
+  height: 80px;
+  font-size: 30px;
+}
+.footer2 {
+  width: 100%;
+  position: relative;
+  background-color: #fafafa;
+}
+.footer2 p {
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.footer2 a {
+padding-top: 20px;
+padding-bottom: 20px;
+color: #A9A9A9;
+}
